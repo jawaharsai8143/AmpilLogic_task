@@ -1,0 +1,11 @@
+#buttons-class{
+    margin-left: 45%;
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#progressbar{
+    margin-bottom: 0px;
+    margin-top: 200px;
+}
