@@ -10,18 +10,19 @@ export class HomeComponent {
   buttonDisabled: boolean | undefined;
   disableProgressbar: boolean | undefined;
   disableSuccessMsg: boolean | undefined;
-
+  disableFotter:boolean|undefined;
   ngOnInit() {
     this.buttonDisabled = true;
     this.disableProgressbar = false;
     this.disableSuccessMsg = false;
+    this.disableFotter=true;
   }
 
   startProgress() {
     this.disableProgressbar = true;
     this.startProgressBar();
+    this.disableFotter=false;
   }
-
   progress = 0;
   showSuccessPopup = false;
 
@@ -30,6 +31,7 @@ export class HomeComponent {
     this.showSuccessPopup = false;
     this.buttonDisabled = false;
     
+
     const interval = setInterval(() => {
       if (this.progress < 100) {
         this.progress += 20; // Adjust the increment as needed
@@ -45,6 +47,7 @@ export class HomeComponent {
     this.disableProgressbar = false;
     this.buttonDisabled = false;
     this.disableSuccessMsg = true;
+    this.disableFotter=true;
   }
 
 }

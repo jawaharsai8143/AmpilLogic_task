@@ -5,7 +5,11 @@
     align-items: center;
     justify-content: center;
 }
-#progressbar{
-    margin-bottom: 0px;
-    margin-top: 200px;
+.no-gutters{
+    margin-top: 350px;
+}
+.Mydata{
+    margin-top: 350px;
+    position:fixed;
+    bottom:5px; 
 }
